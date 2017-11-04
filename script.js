@@ -1,0 +1,1 @@
+/* script js - pro dotazník */

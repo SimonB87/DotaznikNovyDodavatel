@@ -1,0 +1,82 @@
+/* style - pro dotazník */
+
+*{
+  margin:0;
+  padding:0;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  font-size: 14px;
+  color: black;
+  background: #f24f00;
+  line-height: 1.6em;
+}
+
+.topheader {
+  text-align: center;
+  padding-top: 20px;
+  height: 205px;
+  color: #fff;
+}
+
+.dotaznik {
+	text-align: center;
+  text-transform: uppercase;
+  width: 80%;
+  margin: auto;
+  color: #f24f00;
+}
+
+form input, form textarea {
+	border: 2px solid #525252;
+	color: #252525;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 15px;
+	font-weight: normal;
+	margin: 0 0 8px;
+	padding: 20px 8px;
+	text-align: center;
+  width: 80%;
+}
+
+form textarea {
+  height: 150px;
+}
+
+@media(min-width:700px){
+	form input, form textarea{
+		width:500px;
+	}
+}
+
+@media(min-width:700px){
+	form textarea{
+		height: 60px;
+	}
+}
+
+#send {width: 140px;}
+
+#send:hover {background-color: #fdb999;}
+
+#send:active {
+  box-shadow: 0 5px #black;
+  transform: translateY(8px);
+}
+
+.footer{
+  margin-top: 20px;
+  text-align: center;
+  background-color: #525252;
+  color: #fff;
+  padding: 32px;
+}
+
+.footer a {color: #fff;
+  text-decoration: none
+}
+
+.footer a:hover {
+  color: #f24f00;
+}
