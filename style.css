@@ -60,7 +60,10 @@ form input, form textarea {
   font-size: 13px;
 }
 
-form textarea {height: 150px;}
+form textarea {
+  height: 150px;
+  resize: none;
+}
 
 @media(min-width:700px){
 	form input, form textarea{
@@ -84,6 +87,43 @@ form textarea {height: 150px;}
 }
 
 /*Dotaznik - styly - finish podrobného stylizování*/
+
+.dotaznikvalid input:optional {
+  border-left-color: orange;
+  border-right-color: orange;
+  border-left-width: 8px;
+  border-right-width: 8px;
+}
+.dotaznikvalid input:required:valid {
+  border-left-color: palegreen;
+  border-right-color: palegreen;
+  border-left-width: 8px;
+  border-right-width: 8px;
+}
+.dotaznikvalid input:invalid {
+  border-left-color: salmon;
+  border-right-color: salmon;
+  border-left-width: 8px;
+  border-right-width: 8px;
+}
+.dotaznikvalid input:required:focus:valid {
+  background: url("yes.jpg") no-repeat 95% 50%;
+  background-color: lightyellow;
+  background-size: 25px;
+}
+.dotaznikvalid input:focus:invalid {
+  background: url("no.jpg") no-repeat 95% 50%;
+  background-size: 25px;
+  background-color: lightyellow;
+}
+
+/*Dotaznik - validace podrobná - start*/
+
+
+
+
+/*Dotaznik - validace podrobná - finish*/
+
 
 .footer{
   margin-top: 20px;
