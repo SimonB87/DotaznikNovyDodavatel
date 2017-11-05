@@ -28,6 +28,8 @@ body {
   color: #f24f00;
 }
 
+/*Dotaznik - styly - start*/
+
 form input, form textarea {
 	border: 2px solid #525252;
 	color: #252525;
@@ -42,6 +44,11 @@ form input, form textarea {
 
 .titul{
   color: #fff;
+}
+
+.soubor{
+  background-color: #fff;
+  color: #black;
 }
 
 form textarea {
@@ -68,6 +75,8 @@ form textarea {
   box-shadow: 0 5px #black;
   transform: translateY(8px);
 }
+
+/*Dotaznik - styly - finish*/
 
 .footer{
   margin-top: 20px;
