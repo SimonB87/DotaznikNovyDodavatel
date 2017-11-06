@@ -1,4 +1,4 @@
-<!doctype html>
+﻿<!doctype html>
 
 <!-- Website by Simon Buryan coded in 2017 -->
 
@@ -56,52 +56,52 @@
 
    <p>
      <label for="textdemo" class="titul"><strong>Ulice a číslo domu<strong></label><br>
-		 <input type="text" name="adresa" id="adreulice" placeholder="Uveďte adresu subjektu" required><br>
+		 <input type="text" name="adreulice" id="adreulice" placeholder="Uveďte adresu subjektu" required><br>
    </p>
 
    <p>
      <label for="textdemo" class="titul"><strong>Obec<strong></label><br>
-		 <input type="text" name="adresa" id="adreobec" placeholder="Uveďte obec subjektu" required><br>
+		 <input type="text" name="adreobec" id="adreobec" placeholder="Uveďte obec subjektu" required><br>
   </p>
 
    <p>
-     <label for="textdemo" class="titul"><strong>PSČ<strong></label><br>
-		 <input type="number" name="adresa" id="adrepsc" placeholder="Uveďte pětimístné číslo v celku" required><br>
+     <label class="titul"><strong>PSČ<strong></label><br>
+		 <input type="number" name="adrepsc" id="adrepsc" placeholder="Uveďte pětimístné číslo v celku" min="10000" max="99999"required><br>
   </p>
 
   <p>
     <label for="zeme" class="titul"><strong>Země původu<strong></label><br>
-    <input type="text" name="zeme" id="adrezeme" placeholder="Uveďte zemi původu" value="ČR" optional><br>
+    <input type="text" name="adrezeme" id="adrezeme" placeholder="Uveďte zemi původu" value="ČR" optional><br>
  </p>
 
    <p>
      <label for="textdemo" class="titul"><strong>Jméno kontaktní osoby<strong></label><br>
-		 <input type="text" name="kontakt" id="jmkontakt" placeholder="Uveďte celé jméno kontaktní osoby subjektu" required><br>
+		 <input type="text" name="jmkontakt" id="jmkontakt" placeholder="Uveďte celé jméno kontaktní osoby subjektu" required><br>
   </p>
 
    <p>
      <label for="textdemo" class="titul"><strong>Email kontaktní osoby<strong></label><br>
-		 <input type="email" name="email" id="emailkontakt" value="@" placeholder="Uveďte email kontaktní osoby subjektu" required><br>
+		 <input type="email" name="emailkontakt" id="emailkontakt" value="@" placeholder="Uveďte email kontaktní osoby subjektu" required><br>
   </p>
 
   <p>
     <label for="textdemo" class="titul"><strong>Předvolba telefonního čísla<strong></label><br>
-		<input type="text" name="predmob" id="predmobkontakt" placeholder="Uveďte telefonní číslo kontaktní osoby subjektu" value="+420" optional><br>
+		<input type="text" name="predtelkontakt" id="predtelkontakt" placeholder="Uveďte telefonní číslo kontaktní osoby subjektu" value="+420" optional><br>
   </p>
 
   <p> <!-- dodat minimální délku čísla přes valudaci v JAVASCRIPTu, CSS validace nefunguje :-(  -->
     <label for="textdemo" class="titul"><strong>Telefon<strong></label><br>
-		<input type="text" name="mob" id="telkontakt" placeholder="Uveďte telefonní číslo kontaktní osoby subjektu" min=1000 max=999999999 required><br>
+		<input type="number" name="telkontakt" id="telkontakt" placeholder="Uveďte telefonní číslo kontaktní osoby subjektu" min="1000" max="999999999" required><br>
   </p>
 
    <p>
      <label for="textdemo" class="titul"><strong>Cenová nabídka<strong></label><br>
-     <input type="file" id="file"  class="soubor" accept="image/jpeg" placeholder="Přiložte soubor, pokud je k dispozici" optional>
+     <input type="file" id="soubor"  class="soubor" accept="image/jpeg" placeholder="Přiložte soubor, pokud je k dispozici" optional>
    </p>
 
    <p>
      <label for="textdemo" class="titul"><strong>Popis náplně práce subjektu<strong></label><br>
-		 <textarea name="message" id="zprava" placeholder="Popište činnost, kterou subjektu bude realizovat" optional></textarea><br>
+		 <textarea name="zprava" id="zprava" placeholder="Popište činnost, kterou subjektu bude realizovat" optional></textarea><br>
   </p>
   <!-- finish- DIV pro CSS validaci odpovědí -->
   </div>

@@ -1,4 +1,4 @@
-/* style - pro dotazník */
+/* styly pro dotazník */
 
 *{
   margin:0;
@@ -65,6 +65,7 @@ form textarea {
   resize: none;
 }
 
+/*Start - Úprava zobrazení pro různé velikosti obrazovek*/
 @media(min-width:700px){
 	form input, form textarea{
 		width:500px;
@@ -76,6 +77,7 @@ form textarea {
 		height: 60px;
 	}
 }
+/*Finish - Úprava zobrazení pro různé velikosti obrazovek*/
 
 #send {width: 140px;}
 
@@ -85,9 +87,9 @@ form textarea {
   box-shadow: 0 5px #black;
   transform: translateY(8px);
 }
-
 /*Dotaznik - styly - finish podrobného stylizování*/
 
+/*Dotaznik - validace podrobná - start*/
 .dotaznikvalid input:optional {
   border-left-color: orange;
   border-right-color: orange;
@@ -116,15 +118,9 @@ form textarea {
   background-size: 25px;
   background-color: lightyellow;
 }
-
-/*Dotaznik - validace podrobná - start*/
-
-
-
-
 /*Dotaznik - validace podrobná - finish*/
 
-
+/*Zapati*/
 .footer{
   margin-top: 20px;
   text-align: center;
